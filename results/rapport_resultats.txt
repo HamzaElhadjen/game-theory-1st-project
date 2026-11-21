@@ -1,0 +1,47 @@
+AEGT-MO - RAPPORT TEXTUEL DES RESULTATS
+============================================================================
+Tolerance de succes : erreur absolue <= 0.001
+Les valeurs de fitness sont a minimiser.
+
+PROBLEME : RASTRIGIN
+----------------------------------------------------------------------------
+Methode          Meilleur     Moyenne     Mediane  Ecart-type    Succes
+regret            16.2187     33.3578     34.8352     5.82594     0.0%
+uniform            18.203     36.2232     36.3547     6.76122     0.0%
+replicator        20.7883      36.363     37.6315     6.40289     0.0%
+
+regret : pire=42.02143 ; temps moyen=0.453 s ; evaluations moyennes=10000 ; runs=30
+  Probabilites finales moyennes : rand/1=0.204 ; current-to-best/1=0.765 ; rand/2=0.031
+uniform : pire=51.12279 ; temps moyen=0.472 s ; evaluations moyennes=10000 ; runs=30
+  Probabilites finales moyennes : rand/1=0.333 ; current-to-best/1=0.333 ; rand/2=0.333
+replicator : pire=47.6097 ; temps moyen=0.455 s ; evaluations moyennes=10000 ; runs=30
+  Probabilites finales moyennes : rand/1=0.291 ; current-to-best/1=0.518 ; rand/2=0.192
+Meilleure moyenne : regret (fitness moyenne = 33.35784).
+
+PROBLEME : ROSENBROCK
+----------------------------------------------------------------------------
+Methode          Meilleur     Moyenne     Mediane  Ecart-type    Succes
+uniform           3.88023      9.0257      7.1663     10.1221     0.0%
+replicator        5.12967     12.4204     7.31369     19.9605     0.0%
+regret            2.35166     21.3095     8.61628     29.1456     0.0%
+
+uniform : pire=61.98417 ; temps moyen=0.466 s ; evaluations moyennes=10000 ; runs=30
+  Probabilites finales moyennes : rand/1=0.333 ; current-to-best/1=0.333 ; rand/2=0.333
+replicator : pire=91.28018 ; temps moyen=0.466 s ; evaluations moyennes=10000 ; runs=30
+  Probabilites finales moyennes : rand/1=0.224 ; current-to-best/1=0.594 ; rand/2=0.182
+regret : pire=115.6972 ; temps moyen=0.466 s ; evaluations moyennes=10000 ; runs=30
+  Probabilites finales moyennes : rand/1=0.030 ; current-to-best/1=0.940 ; rand/2=0.030
+Meilleure moyenne : uniform (fitness moyenne = 9.025702).
+
+NOTES D'INTERPRETATION
+- Une moyenne plus faible indique une meilleure performance moyenne.
+- Un ecart-type faible indique des resultats plus reguliers.
+- Le taux de succes utilise la tolerance indiquee en debut de rapport.
+- Le classement par moyenne ne remplace pas un test statistique.
+- Les evaluations des trois operateurs sont comptees dans le budget.
+
+FICHIERS COMPLEMENTAIRES
+- raw_runs.csv : resultats de chaque execution.
+- summary.csv : statistiques agregees.
+- convergence.csv : convergence, probabilites et gains.
+- figures/ : graphiques facultatifs.
